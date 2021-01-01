@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "generals",
+  "info": {
+    "name": "general",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "我的博客",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "githubUrl": {
+      "type": "string",
+      "default": "https://github.com/lyka3156"
+    },
+    "blogUrl": {
+      "type": "string",
+      "default": "https://github.com/lyka3156"
+    }
+  }
+}
