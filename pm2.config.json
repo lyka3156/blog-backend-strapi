@@ -1,7 +1,7 @@
 {
     "apps": [
         {
-            "name": "realworld",
+            "name": "myblog-backend-strapi",
             "script": "npm -- start",
             "cwd": "./"
         }
